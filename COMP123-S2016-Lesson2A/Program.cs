@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  *Date: May 17th 2016
  *Date Modified: May 17th 2016
  *Description: Advanced Method Demo for Lesson2
- *Versiton : 0.0.2 - Added a reference to driver class from UnitTest
+ *Versiton : 0.0.3 - Added andXandY method and associated test
  */
 namespace COMP123_S2016_Lesson2A
 {
@@ -19,7 +19,7 @@ namespace COMP123_S2016_Lesson2A
      * @class Program
      * 
      */
-    class Program
+   public class Program
     {
         /**
          * Main Method for our drive class
@@ -29,6 +29,25 @@ namespace COMP123_S2016_Lesson2A
          */
         static void Main(string[] args)
         {
+            int x = 50;
+            int y = 40;
+            int result = 0;
+         result = addXandY(x, y);
+            Console.WriteLine(result);
+        }
+
+       /**
+        * simple Method to add two values
+        * 
+        * @method addXandY
+        * @param {int} firstNumber
+        * @param {int} secondNumber
+        */
+       public static int addXandY(int firstNumber, int SecondNumber)
+        {
+            int result = 0;
+            result = firstNumber + SecondNumber;
+            return result; 
         }
     }
 }
